@@ -1,1 +1,6 @@
-Welcome
+@extends("layouts.mainContent")
+
+@section("main-content")
+
+
+@endsection
