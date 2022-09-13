@@ -20,7 +20,7 @@
                 <a class="nav-link active" aria-current="page" href="{{route('homePage')}}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Movies</a>
+                <a class="nav-link" href="{{route('comics')}}">Comics</a>
               </li>
             </ul>
           </div>

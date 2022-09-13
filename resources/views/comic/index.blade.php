@@ -8,7 +8,8 @@
         <table class="table">
             <thead class="thead-dark">
                 <tr>
-                    <th scope="col">ID</th>
+                    
+                    <th scope="col"><a href="{{route('comic.show', $comic->id)}}">ID</a> </th>
                     <th scope="col" colspan="2">Title</th>
                     <th scope="col">Price</th>
                     <th scope="col">Series</th>
