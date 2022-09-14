@@ -14,6 +14,7 @@
               <h5 class="card-title">{{$comic->title}}</h5>
               <p class="card-text">{{$comic->price}}$</p>
               <p class="card-text"><small class="text-muted">{{$comic->sale_date}}</small></p>
+              <a href="{{route('comic.index')}}" class="btn btn-primary w-100">Go back</a>
             </div>
           </div>
     </div>
