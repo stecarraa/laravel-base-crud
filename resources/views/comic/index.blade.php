@@ -29,8 +29,15 @@
                         <td>{{$comic->type}}</td>
                         <td>
                             <a href="{{route('comic.edit', $comic->id)}}">
-                                <button type="button" class="btn btn-success">Edit</button>
+                                <button type="button" class="btn btn-sm btn-success">Edit</button>
                             </a>
+                        </td>
+                        <td>
+                            <form action="{{ route('comic.destroy', $comic->id)}}" method="post">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                            </form>
                         </td>
                     </tr>
                 @endforeach
