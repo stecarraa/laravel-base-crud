@@ -27,6 +27,11 @@
                         <td>{{$comic->series}}</td>
                         <td>{{$comic->sale_date}}</td>
                         <td>{{$comic->type}}</td>
+                        <td>
+                            <a href="{{route('comic.edit', $comic->id)}}">
+                                <button type="button" class="btn btn-success">Edit</button>
+                            </a>
+                        </td>
                     </tr>
                 @endforeach
             </tbody>

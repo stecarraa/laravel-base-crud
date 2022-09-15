@@ -46,7 +46,7 @@ class ComicController extends Controller
         $comic->sale_date = $data['sale_date'];
         $comic->type = $data['type'];
         $comic->save();
-        return redirect()->route('comic.index', $comic->id);
+        return redirect()->route('comic.show', $comic->id);
     }
 
     /**
@@ -68,7 +68,9 @@ class ComicController extends Controller
      */
     public function edit($id)
     {
-        //
+        $comic = Comic::find($id);
+        return view('comic.edit', compact('comic'));  
+    
     }
 
     /**
@@ -80,7 +82,12 @@ class ComicController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+        $comic = Comic::find($id);
+        $comic->update($data);
+
+        return redirect()->route('comic.index', $comic->id);
+
     }
 
     /**
