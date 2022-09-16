@@ -9,13 +9,13 @@ class ComicController extends Controller
 {
 
     protected $validationArray = [
-        'title' => 'required|string|min:3|max:255|unique:comic,title',
+        'title' => 'required|string|min:3|max:255|unique:comics,title',
         'description' => 'required|min:3|string',
         'thumb' => 'required|active_url',
         'price' => 'required|numeric',
         'series' => 'required|string|min:3|max:255',
         'sale_date' => 'required|date',
-        // 'type' => 'required|exists:comic,type',
+        'type' => 'required|exists:comics,type',
     ];
 
 

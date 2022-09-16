@@ -49,6 +49,7 @@
                     <select class="form-select" name="type" id="type">
                         <option value="comic book">Comic Book</option>
                         <option value="graphic novel">Graphic Novel</option>
+                        <option value="action comic">Action Comic</option>
                         <option value="other">Other</option>
                     </select>
               </div>
